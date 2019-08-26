@@ -1,0 +1,153 @@
+#gamePlay {
+    display: flex;
+}
+.stats {
+    border: 1px solid gray;
+}
+.stats td {
+    border: 1px dashed gray
+}
+
+.scoreboard {
+    display: flex;
+}
+.scoreboard >div {
+    margin: 0 auto
+}
+#play {
+    height: 115px;
+    width: 115px;
+    border: 1px solid red;
+    border-radius: 115px;
+    background-color: #689494;
+    color: yellow;
+    font-size: 30px;
+    margin-left: 40px;
+}
+
+#autoPlay, #autoPlayTillWicket {
+    background-color: #210606;
+    color: white;
+    font-size: 20px;
+    border-radius: 21px;
+    width: 170px;
+    height: 70px;
+    margin-left: 40px;
+}
+#firstInningScore {
+    color: #920000;
+}
+
+#toss {
+    height: 120px;
+    width: 120px;
+    border: 1px solid red;
+    border-radius: 120px;
+    background-color: #689494;
+    color: yellow;
+    margin-left: 40%;
+    margin-top: 50px;
+    font-size: 42px;
+}
+.mainBoard {
+    width: 70%;
+}
+.commentry {
+}
+.commentry div {
+    height: 320px;
+    overflow: scroll;
+    border: 2px double;
+}
+
+.liveScore {
+    color: #3c2fff;
+    font-size: 24px;
+    font-weight: bolder;
+}
+#wicketLogs1 {
+    height: 200px;
+    width: 50%;
+    overflow: scroll;
+    border: 2px double;
+}
+#wicketLogs2 {
+    height: 200px;
+    width: 50%;
+    overflow: scroll;
+    border: 2px double;
+}
+.wicketCommentry {
+    display: flex;
+}
+
+
+#coin {
+    position: relative;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+  }
+  #coin div {
+    width: 100%;
+    height: 100%;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+    -webkit-box-shadow: inset 0 0 45px rgba(255,255,255,.3), 0 12px 20px -10px rgba(0,0,0,.4);
+       -moz-box-shadow: inset 0 0 45px rgba(255,255,255,.3), 0 12px 20px -10px rgba(0,0,0,.4);
+            box-shadow: inset 0 0 45px rgba(255,255,255,.3), 0 12px 20px -10px rgba(0,0,0,.4);
+  }
+  .side-a {
+    background-color: #bb0000;
+  }
+  .side-b {
+    background-color: #3e3e3e;
+  }
+  
+  #coin {
+    transition: -webkit-transform 1s ease-in;
+    -webkit-transform-style: preserve-3d;
+  }
+  #coin div {
+    position: relative;
+    -webkit-backface-visibility: hidden;
+  }
+  #coin span {
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    top: 40px;
+    left: 30px;
+    color: yellow;
+  }
+  .side-a {
+    z-index: 100;
+  }
+  .side-b {
+    -webkit-transform: rotateY(-180deg);
+  
+  }
+  
+  #coin.heads {
+    -webkit-animation: flipHeads 3s ease-out forwards;
+    -moz-animation: flipHeads 3s ease-out forwards;
+      -o-animation: flipHeads 3s ease-out forwards;
+         animation: flipHeads 3s ease-out forwards;
+  }
+  #coin.tails {
+    -webkit-animation: flipTails 3s ease-out forwards;
+    -moz-animation: flipTails 3s ease-out forwards;
+      -o-animation: flipTails 3s ease-out forwards;
+         animation: flipTails 3s ease-out forwards;
+  }
+  
+  @-webkit-keyframes flipHeads {
+    from { -webkit-transform: rotateY(0); -moz-transform: rotateY(0); transform: rotateY(0); }
+    to { -webkit-transform: rotateY(1800deg); -moz-transform: rotateY(1800deg); transform: rotateY(1800deg); }
+  }
+  @-webkit-keyframes flipTails {
+    from { -webkit-transform: rotateY(0); -moz-transform: rotateY(0); transform: rotateY(0); }
+    to { -webkit-transform: rotateY(1980deg); -moz-transform: rotateY(1980deg); transform: rotateY(1980deg); }
+  }
+  

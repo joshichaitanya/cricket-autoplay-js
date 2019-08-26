@@ -1,0 +1,124 @@
+<!DOCTYPE>
+<html> <head>
+    <title>play</title>
+    <link rel="stylesheet" type="text/css" href="./play.css">
+    <script src="play.js"></script>
+</head>
+<body onload="ready()">
+    <div id="coin" onclick='toss()'>
+        <div class="side-a">
+            <span> Heads </span>
+        </div>
+        <div class="side-b">
+            <span> Tails </span>
+        </div>
+        <h1>Click on coin to flip</h1>
+    </div>
+    <div id='gamePlay'>
+        <div class="mainBoard">
+            <div class="controls">
+                <button id='play' onclick='playNext()'> Play Next ball </button>
+                <button id='autoPlay' onclick='autoPlay()'> Auto Play X Overs </button>
+                <button id='autoPlayTillWicket' onclick='autoPlayTillWicket()'> Auto Play 1 Wicket </button>
+            </div>
+            <br/>
+            <div class="scoreboard-container">
+                <div id='firstInningScore'></div>
+                Live Score / Wicket  (Overs)
+                <br/>
+                <div class="liveScore">
+                    <span id='score'>0</span> / <span id='wicket'>0</span> ( <span id='overs'>0</span> overs)
+                </div>
+                Partner Ship: <span id='partnerShip'></span>
+            </div>
+            <div class="scoreboard">
+                <div id='secondDiv'>
+                    <h2>First Innings</h2>
+                    <table class='stats'>
+                        <tr>
+                            <td>Fours</td>
+                            <td id='fours2'>0</td>
+                        </tr>
+                        <tr>
+                            <td>Sixers</td>
+                            <td id='sixers2'>0</td>
+                        </tr>
+                        <tr>
+                            <td>Singles</td>
+                            <td id='singles2'>0</td>
+                        </tr>
+                        <tr>
+                            <td>Dots</td>
+                            <td id='dots2'>0</td>
+                        </tr>
+                        <tr>
+                            <td>Doubles</td>
+                            <td id='doubles2'>0</td>
+                        </tr>
+                        <tr>
+                            <td>Triples</td>
+                            <td id='triples2'>0</td>
+                        </tr>
+                        <tr>
+                            <td>Wide</td>
+                            <td id='wide2'>0</td>
+                        </tr>
+                        <tr>
+                            <td>No Ball</td>
+                            <td id='noBall2'>0</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <h2 id='inningTitle'>First Innings</h2>
+                    <table class='stats'>
+                        <tr>
+                            <td>Fours</td>
+                            <td id='fours1'>0</td>
+                        </tr>
+                        <tr>
+                            <td>Sixers</td>
+                            <td id='sixers1'>0</td>
+                        </tr>
+                        <tr>
+                            <td>Singles</td>
+                            <td id='singles1'>0</td>
+                        </tr>
+                        <tr>
+                            <td>Dots</td>
+                            <td id='dots1'>0</td>
+                        </tr>
+                        <tr>
+                            <td>Doubles</td>
+                            <td id='doubles1'>0</td>
+                        </tr>
+                        <tr>
+                            <td>Triples</td>
+                            <td id='triples1'>0</td>
+                        </tr>
+                        <tr>
+                            <td>Wide</td>
+                            <td id='wide1'>0</td>
+                        </tr>
+                        <tr>
+                            <td>No Ball</td>
+                            <td id='noBall1'>0</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="commentry">
+                <h2>live commentary</h2>
+                <div id="logs"></div>
+            </div>
+            <h2>Wickets Fallen</h2>
+            <div class="wicketCommentry">
+                <div id="wicketLogs1"></div>
+                <div id="wicketLogs2"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
